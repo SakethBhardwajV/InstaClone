@@ -1,0 +1,107 @@
+.nav-bar {
+  background-color: white;
+  width: 30rem;
+  height: 100vh;
+  padding: 1rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 2px solid var(--grey);
+  z-index: 1000;
+}
+
+.logo {
+  height: 4rem;
+  margin-block: 4rem;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.nav-item {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+  gap: 1.5rem;
+  padding-inline: 1rem;
+  border-radius: 0.8rem;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.nav-item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.nav-item:hover {
+  background-color: var(--grey);
+}
+
+.nav-item-active {
+  font-weight: 400;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.nav-item-logout {
+  display: none;
+  aspect-ratio: 1;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 900px) {
+  .nav-text {
+    display: none;
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+  }
+
+  .nav-bar {
+    width: fit-content;
+  }
+
+  .nav-item-logout {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-bar {
+    width: 100%;
+    height: 5rem;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .nav-item {
+    height: fit-content;
+    padding: 1rem;
+  }
+
+  .nav-icon {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+}
+
+@media (min-width: 1800px) {
+}

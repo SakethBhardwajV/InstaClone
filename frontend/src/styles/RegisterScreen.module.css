@@ -1,0 +1,142 @@
+.container {
+  min-height: calc(100vh - 10rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form-container,
+.register,
+.apps {
+  width: 40rem;
+  min-width: 20rem;
+  padding: 5rem;
+  border: 2px solid var(--grey);
+  border-radius: 0.2rem;
+}
+
+.logo {
+  width: 18rem;
+  margin-bottom: 1.5rem;
+  margin-inline: auto;
+  display: block;
+}
+
+.description {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0.6;
+}
+
+.input {
+  width: 100%;
+  height: 3.75rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  border-style: solid;
+  border-radius: 0.2rem;
+  border-color: var(--grey);
+  font-family: inherit;
+  font-weight: 300;
+}
+
+.terms {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  opacity: 0.6;
+  margin-bottom: 2rem;
+}
+
+.or-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-block: 1rem;
+}
+
+.line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--grey);
+  display: inline-block;
+}
+
+.or {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.facebook-button {
+  color: #385185;
+  margin-block: 2.5rem;
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.forgot-password {
+  color: var(--black);
+  text-align: center;
+  font-size: 1.1rem;
+  display: block;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.register {
+  padding: 3rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.sign-up {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.apps {
+  border: none;
+  padding: 0.5rem;
+}
+
+.apps-title {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.app-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.app-icon {
+  height: 4rem;
+  display: inline-block;
+}
+
+.footer {
+  width: 100%;
+  height: 10rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
